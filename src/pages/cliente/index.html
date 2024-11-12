@@ -16,44 +16,94 @@
 <body>
 
     <header>
-
+        <!-- Logo -->
         <div class="logo">
             <!--Imagem-->
             <img src="../../imgs/logo.png" alt="Logo da Clínica de Estética Rosângela">
         </div>
-
 
         <!-- Navbar -->
         <nav>
             <div>
                 </ul>
                 <a href="index.html" class="nav-item active">Home</a>
-                <a href="./servicos.html" class="nav-item">Serviços</a>
-                <a href="./pacotes.html" class="nav-item">Pacotes</a>
+                <a href="servicos.html" class="nav-item">Serviços</a>
+                <a href="pacotes.html" class="nav-item">Pacotes</a>
                 <ul>
             </div>
             
             <script>
                 const navItens = document.querySelectorAll(".nav-item");
                 navItens.forEach(item => {
-                    if(item.href === window.location.href){
+                    if (item.href === window.location.href) {
                         item.classList.add("active");
                     }
                 });
             </script>
 
-            <a href="login.html" class="logout nav-item">Logout</a>           
+            <a href="login.html" class="logout nav-item">Logout</a>
         </nav>
-
     </header>
 
     <main>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis hic magnam unde libero eligendi eum
+            facere eius quia atque esse consequuntur, numquam nisi neque dolorum quae saepe, laborum porro praesentium?
+        </p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae pariatur provident vitae autem blanditiis dolorem ex incidunt, facere laudantium, dolores eos tempora enim tempore ipsam maxime quo molestiae error?</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae pariatur provident vitae autem blanditiis dolorem ex incidunt, facere laudantium, dolores eos tempora enim tempore ipsam maxime quo molestiae error?</p>
 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quae pariatur provident vitae autem blanditiis dolorem ex incidunt, facere laudantium, dolores eos tempora enim tempore ipsam maxime quo molestiae error?</p>
     </main>
 
     <footer>
 
+        <div class="footer-container">
+
+            <!-- Sobre Nós -->
+            <div id="sobre-nos" class="ft">
+                
+                <h3>Sobre Nós</h3>
+
+                <p>
+                    A Clínica de Estética Rosângela é um negócio fundado em 2020 que tem o intuito de proporcionar a todos
+                    os clientes serviços de beleza de qualidade.
+                </p>
+    
+            </div>
+
+            <!-- Redes sociais -->
+            <div id="social-media" class="ft">
+                
+                <h3>Redes Sociais</h3>
+    
+                <div class="smedia-links-container">
+                    <a href="#"><img src="../../imgs/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../../imgs/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../../imgs/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+    
+            <div id="contato" class="ft">
+                
+                <h3>Contato</h3>
+                <p>clinicarosangela@gmail.com</p>
+                <p>
+                    (XX) XXXXX-XXXX
+                </p>
+                <p>Estr. dos Bandeirantes, 3285 Jacarepaguá, Rio de Janeiro - RJ, 22775-113</p>
+            </div>
+            
+        </div> <!--fim div container-->
+
+        <!-- Copyright -->
+        <div class="copy-text">
+            <p style="text-align: center;">&copy 2023 Clínica de Estética Rosângela. Todos os direitos reservados.</p>
+        </div>
+        
     </footer>
+
 </body>
 
 </html>

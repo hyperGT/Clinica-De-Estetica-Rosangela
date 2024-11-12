@@ -4,6 +4,9 @@ body {
   box-sizing: border-box;
   background-color: #f9b7d1;
   font-family: Inter;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header {
@@ -14,14 +17,14 @@ header {
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
 }
 
 nav ul {
   display: flex;
-  list-style-type: none;  
+  list-style-type: none;
   padding: 0;
 }
 
@@ -39,3 +42,36 @@ nav ul {
 .logout {
   justify-content: right;
 }
+
+footer {
+  padding: 3rem;
+  height: 200px;
+  background-color: #cd5fc9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer-container .ft {
+  width: 33.33%;
+}
+
+main {
+  margin: 1rem;
+  height: auto;
+}
+
+
+a img {
+    padding: 0.2rem;
+    height: 40px;
+}
+
