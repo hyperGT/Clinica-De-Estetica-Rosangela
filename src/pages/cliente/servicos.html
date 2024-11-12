@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="../../style/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!--Imagem-->
+            <img src="../../imgs/logo.png" alt="Logo da Clínica de Estética Rosângela">
+        </div>
+
+        <!-- Navbar -->
+        <nav>
+            <div>
+                </ul>
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="./servicos.html" class="nav-item">Serviços</a>
+                <a href="./pacotes.html" class="nav-item">Pacotes</a>
+                <ul>
+            </div>
+            <a href="login.html" class="logout">Logout</a>
+
+            <script>
+                const navItens = document.querySelectorAll(".nav-item");
+                navItens.forEach(item => {
+                    if (item.href === window.location.href) {
+                        item.classList.add("active");
+                    }
+                });
+            </Script>
+        </nav>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
