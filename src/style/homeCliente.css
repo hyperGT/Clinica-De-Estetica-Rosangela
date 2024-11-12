@@ -1,0 +1,31 @@
+main {
+    display: flex;
+    flex-direction: column;  
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.bg  {  
+       /*TODO: mexer na posição da imagem*/
+}
+
+.card-column {    
+    width: 25%;
+}
+
+.card {   
+    background-color: #D9D9D9;
+    width: 259px;
+    padding: 2rem;
+    margin-top: 2rem;
+
+}
+
+.card:hover{
+    cursor: pointer;
+}
