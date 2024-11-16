@@ -1,115 +1,115 @@
 /* Reset de estilo */
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    background-color: #333; /* Fundo cinza escuro */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background-color: #333; /* Fundo cinza escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* Container principal */
 main {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 2rem;
-    width: 90%;
-    max-width: 400px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Tabs de navegação */
 .tabs {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1.5rem;
 }
 
 .tab {
-    padding: 0.5rem 1.5rem;
-    font-size: 0.9rem;
-    cursor: pointer;
-    margin: 0;
-    text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 0;
+  text-decoration: none;
 }
 
 .login-btn {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .register-btn {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 /* Formulário */
 form {
-    background-color: #f9f9f9; /* Fundo cinza claro */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: left;
-    width: 90%;
-    margin: 0 auto 1.5rem;
+  background-color: #f9f9f9; /* Fundo cinza claro */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: left;
+  width: 90%;
+  margin: 0 auto 1.5rem;
 }
 
 label {
-    font-size: 0.9rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-    display: block;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 input[type="email"],
 input[type="password"] {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    background-color: #e0e0e0; /* Cinza claro */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 0.9rem;
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  background-color: #e0e0e0; /* Cinza claro */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
 }
 
 input::placeholder {
-    color: #777;
+  color: #777;
 }
 
 .forgot-password {
-    font-size: 0.8rem;
-    color: #de5cff;
-    text-decoration: none;
-    margin-bottom: 1rem;
-    display: inline-block;
+  font-size: 0.8rem;
+  color: #de5cff;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  display: inline-block;
 }
 
 /* Botão Entrar */
 .submit-btn {
-    background-color: #de5cff;
-    color: white;
-    border: none;
-    padding: 0.8rem;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    width: 100%;
+  background-color: #de5cff;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: 100%;
 }
 
 .submit-btn:hover {
-    background-color: #c04ee0;
+  background-color: #c04ee0;
 }
 
 /* Link Admin */
 .admin-link {
-    font-size: 0.8rem;
-    color: #999;
-    text-decoration: none;
-    margin-top: 1rem;
-    display: block;
-    text-align: right;
+  font-size: 0.8rem;
+  color: #999;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: block;
+  text-align: right;
 }

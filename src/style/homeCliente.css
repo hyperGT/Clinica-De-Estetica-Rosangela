@@ -1,38 +1,38 @@
-main {    
-    width: 100%;
-    display: flex;    
+main {
+  width: 100%;
+  display: flex;
 }
 
-.card-container {     
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.card-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card {   
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #D9D9D9;    
-    width: 290px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 2em 0; /* Espaço entre os cards */
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
+.card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #d9d9d9;
+  width: 290px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2em 0; /* Espaço entre os cards */
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
-.card:hover{    
-    background-color: #ddd;
+.card:hover {
+  background-color: #ddd;
 }
 
 .imagem {
-    flex: 1;    
-    background: url('../imgs/pretty-nail-art.png') no-repeat center center;
-    min-height: 100%; /* Garante que ocupe toda a altura */
-    background-size: cover;
+  flex: 1;
+  background: url("../imgs/pretty-nail-art.png") no-repeat center center;
+  min-height: 100%; /* Garante que ocupe toda a altura */
+  background-size: cover;
 }
