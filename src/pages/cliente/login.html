@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../../style/loginCliente.css">
+    <title>Página de Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../style/loginCliente.css">
 </head>
 
 <body>
     <main>
-        <div>
-            <a href="login.html" class="login-btn buttons">Login</a> 
-            <a href="cadastro.html" class="register-btn buttons">Cadastre-se</a>     
+        <!-- Abas de navegação -->
+        <div class="tabs">
+            <a href="login.html" class="tab login-btn active">Login</a>
+            <a href="cadastro.html" class="tab register-btn">Cadastre-se</a>
         </div>
+
+        <!-- Formulário -->
+        <form action="index.html" method="get">
+            <label for="email">Digite seu Email/CPF</label>
+            <input type="email" id="email" name="email" placeholder="Email/CPF" required>
         
-        <form>
-            <input type="email" name="email" placeholder="E-mail">
-            <input type="password" name="senha" placeholder="Senha">
-            <input type="submit" value="Entrar">
+            <label for="senha">Digite sua Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Senha" required>
+        
+            <a href="#" class="forgot-password">Esqueci a senha!</a>
+        
+            <input type="submit" value="Entrar" class="submit-btn">
         </form>
-        <a href="#">Esqueci a senha!</a>
+
+        <!-- Link Admin -->
+        <a href="../admin/login.html" class="admin-link">Admin</a>
     </main>
 </body>
 

@@ -1,51 +1,115 @@
+/* Reset de estilo */
 body {
-  margin: 0;
-  box-sizing: border-box;
-  background-color: #404040;
-  font-family: Inter;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: #333; /* Fundo cinza escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+/* Container principal */
 main {
-  background-color: white !important;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  border-radius: 1rem;
-  margin: 6rem;
-  padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Tabs de navegação */
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+}
+
+.tab {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: black;
+    color: white;
+}
+
+.register-btn {
+    background-color: white;
+    color: black;
+}
+
+/* Formulário */
 form {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
+    background-color: #f9f9f9; /* Fundo cinza claro */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto 1.5rem;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
 }
 
 input[type="email"],
 input[type="password"] {
-  margin-bottom: 1rem;
-  background-color: #737373;
-  color: white;
-  opacity: 26%;
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    background-color: #e0e0e0; /* Cinza claro */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
 }
 
-main a {
-  color: #de5cff;
-  text-decoration: none;
-  padding: 1rem;
-  margin: 1rem;
+input::placeholder {
+    color: #777;
 }
 
-.login-btn {
-  color: white;
-  background-color: black;
+.forgot-password {
+    font-size: 0.8rem;
+    color: #de5cff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    display: inline-block;
 }
 
-.register-btn {
-  color: black;
-  background-color: white;
+/* Botão Entrar */
+.submit-btn {
+    background-color: #de5cff;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #c04ee0;
+}
+
+/* Link Admin */
+.admin-link {
+    font-size: 0.8rem;
+    color: #999;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: block;
+    text-align: right;
 }
