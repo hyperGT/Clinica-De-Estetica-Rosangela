@@ -32,7 +32,7 @@ main {
 
 .imagem {
     flex: 1;    
-    background: url('../../imgs/pretty-nail-art.png') no-repeat center center;
+    background: url('../imgs/pretty-nail-art.png') no-repeat center center;
     min-height: 100%; /* Garante que ocupe toda a altura */
     background-size: cover;
 }
