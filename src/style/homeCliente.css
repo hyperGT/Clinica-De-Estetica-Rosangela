@@ -42,10 +42,24 @@ main {
 /* Conteudo fora da main */
 
 #servicos,
-#pacotes {
-  width: 100%;
+#pacotes {  
   height: 350px;
-  padding: 20px;
+  padding: 25px;
   margin-top: 10em;
   /*background-color: blue;*/
+}
+
+a .btn {
+  background-color: #de5cff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+a .btn:hover {
+  background-color: #c04ee0;
 }
