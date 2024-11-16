@@ -1,3 +1,20 @@
 body {
-    background-color: #404040;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #404040;
+  font-family: Inter;
+}
+
+main {
+    background-color: white !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100rem;
+}
+
+main a {
+  color: white;
+  text-decoration: none;
 }
