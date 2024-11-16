@@ -16,7 +16,7 @@ main {
   background-color: #fff;
   border-radius: 10px;
   padding: 2rem;
-  width: 90%;
+  width: 50%;
   max-width: 400px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -67,7 +67,7 @@ label {
 
 input[type="email"],
 input[type="password"] {
-  width: 100%;
+  width: 90%;
   padding: 0.8rem;
   margin-bottom: 1rem;
   background-color: #e0e0e0; /* Cinza claro */
@@ -89,7 +89,7 @@ input::placeholder {
 }
 
 /* Botão Entrar */
-.submit-btn {
+input[type="submit"] {
   background-color: #de5cff;
   color: white;
   border: none;
@@ -100,7 +100,7 @@ input::placeholder {
   width: 100%;
 }
 
-.submit-btn:hover {
+input[type="submit"]:hover {
   background-color: #c04ee0;
 }
 

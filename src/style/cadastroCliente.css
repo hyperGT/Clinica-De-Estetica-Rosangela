@@ -11,10 +11,10 @@ body {
 
 main {
   background-color: #f2f2f2;
-  width: 500px;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
+  width: 50%;
 }
 
 .header {
@@ -25,7 +25,6 @@ main {
 
 .buttons {
   padding: 10px 20px;
-  border: none;
   border-radius: 5px;
   text-decoration: none;
 }
@@ -49,7 +48,7 @@ form {
 .input-group {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 1rem;
 }
 
 .input-group div {
@@ -66,7 +65,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -74,10 +73,9 @@ input[type="password"] {
   font-size: 14px;
 }
 
-.submit-btn {
+input[type="submit"] {
   background-color: #de5cff;
   color: white;
-  font-weight: 600;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -85,6 +83,6 @@ input[type="password"] {
   font-size: 16px;
 }
 
-.submit-btn:hover {
+input[type="submit"]:hover {
   background-color: #c454e3;
 }
