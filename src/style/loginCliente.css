@@ -1,20 +1,51 @@
 body {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   background-color: #404040;
   font-family: Inter;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 main {
-    background-color: white !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 100rem;
+  background-color: white !important;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border-radius: 1rem;
+  margin: 6rem;
+  padding: 2rem;
+}
+
+form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"] {
+  margin-bottom: 1rem;
+  background-color: #737373;
+  color: white;
+  opacity: 26%;
 }
 
 main a {
-  color: white;
+  color: #de5cff;
   text-decoration: none;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.login-btn {
+  color: white;
+  background-color: black;
+}
+
+.register-btn {
+  color: black;
+  background-color: white;
 }
