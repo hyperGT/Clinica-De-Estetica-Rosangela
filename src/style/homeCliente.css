@@ -1,6 +1,7 @@
 main {
   width: 100%;
   display: flex;
+  margin-top: 9.9rem;
 }
 
 .card-container {
