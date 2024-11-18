@@ -1,10 +1,14 @@
-## TAREFAS PENDENTES: 
+# TAREFAS!!
+
+## PENDENTES: 
 - Melhorar pagina de cadastro
-- Botão de logout fixo no canto esquerdo
 - Páginas de Login, Cadastro e relacionados de Administrador
 
-## TAREFAS EM PROGRESSO
+## EM PROGRESSO
 
-## TAREFAS COMPLETAS:
+- 
+
+## COMPLETAS:
 
 - Navbar fixa
+- Botão de logout fixo no canto esquerdo
