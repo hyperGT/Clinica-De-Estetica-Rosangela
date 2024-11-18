@@ -4,7 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  background-color: #333; /* Fundo cinza escuro */
+  background-color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,7 +49,7 @@ main {
 
 /* Formulário */
 form {
-  background-color: #f9f9f9; /* Fundo cinza claro */
+  background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 1rem;
@@ -70,7 +70,7 @@ input[type="password"] {
   width: 90%;
   padding: 0.8rem;
   margin-bottom: 1rem;
-  background-color: #e0e0e0; /* Cinza claro */
+  background-color: #e0e0e0;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 0.9rem;

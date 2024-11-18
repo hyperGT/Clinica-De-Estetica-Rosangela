@@ -1,12 +1,13 @@
 # TAREFAS!!
 
 ## PENDENTES: 
+
 - Melhorar pagina de cadastro
-- Páginas de Login, Cadastro e relacionados de Administrador
+- Verificar otimizações no CSS
 
 ## EM PROGRESSO
 
-- 
+- Páginas de Login, Cadastro e relacionados de Administrador
 
 ## COMPLETAS:
 
