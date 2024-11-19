@@ -1,5 +1,54 @@
 main {
   width: 100%;
+  margin-top: 10rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.cards-container {
   display: flex;
-  margin-top: 9.9rem;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+}
+
+.card {
+  background-color: #e1e1e1;
+  padding: 1.5rem;
+  width: 20%;
+  min-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  text-decoration: none;
+  color: black;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
 }
