@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Pacote</title>
-    <link rel="stylesheet" href="../../style/default.css">
     <link rel="stylesheet" href="../../style/cadastrarPacote.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,49 +13,47 @@
 
 <body>
     <main>
-        <div class="container">
-            <header>
-                <a href="index.html" class="back-button">
-                    <span>&larr;</span> Voltar
-                </a>
-                <h1>Cadastro de Pacote</h1>
-            </header>
+        <header>
+            <a href="index.html" class="back-button">
+                <span>&larr;</span> Voltar
+            </a>
+            <h1>Cadastro de Pacote</h1>
+        </header>
 
-            <form>
-                <div class="form-left">
-                    <div class="input-group">
-                        <label for="nome-pacote">Nome do Pacote</label>
-                        <input type="text" id="nome-pacote" placeholder="Nome do Pacote">
-                    </div>
-                    <div class="input-group">
-                        <label for="servico1">Serviço 1</label>
-                        <input type="text" id="servico1" placeholder="Serviço 1">
-                    </div>
-                    <div class="input-group">
-                        <label for="servico2">Serviço 2</label>
-                        <input type="text" id="servico2" placeholder="Serviço 2">
-                    </div>
-                    <div class="input-group">
-                        <label for="servico3">Serviço 3</label>
-                        <input type="text" id="servico3" placeholder="Serviço 3">
-                    </div>
+        <form>
+            <div class="form-left">
+                <div class="input-group">
+                    <label for="nome-pacote">Nome do Pacote</label>
+                    <input type="text" id="nome-pacote" placeholder="Nome do Pacote">
                 </div>
+                <div class="input-group">
+                    <label for="servico1">Serviço 1</label>
+                    <input type="text" id="servico1" placeholder="Serviço 1">
+                </div>
+                <div class="input-group">
+                    <label for="servico2">Serviço 2</label>
+                    <input type="text" id="servico2" placeholder="Serviço 2">
+                </div>
+                <div class="input-group">
+                    <label for="servico3">Serviço 3</label>
+                    <input type="text" id="servico3" placeholder="Serviço 3">
+                </div>
+            </div>
 
-                <div class="form-right">
-                    <div class="input-group">
-                        <label for="descricao">Descrição/Observação</label>
-                        <textarea id="descricao" placeholder="Descrição/Observação"></textarea>
-                    </div>
-                    <div class="input-group">
-                        <label for="desconto">Desconto</label>
-                        <input type="text" id="desconto" placeholder="Desconto">
-                    </div>
-                    <div class="button-group">
-                        <button type="submit" class="create-button">Criar Pacote</button>
-                    </div>
+            <div class="form-right">
+                <div class="input-group">
+                    <label for="descricao">Descrição/Observação</label>
+                    <textarea id="descricao" placeholder="Descrição/Observação"></textarea>
                 </div>
-            </form>
-        </div>
+                <div class="input-group">
+                    <label for="desconto">Desconto</label>
+                    <input type="text" id="desconto" placeholder="Desconto">
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="create-button">Criar Pacote</button>
+                </div>
+            </div>
+        </form>
     </main>
 </body>
 

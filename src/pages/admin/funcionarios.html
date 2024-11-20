@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funcionários</title>
     <link rel="stylesheet" href="../../style/default.css">
-    <link rel="stylesheet" href="../../style/homeAdmin.css">
+    <link rel="stylesheet" href="../../style/funcionario.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -39,24 +39,28 @@
         <script src="../../script/navbarScript.js"></script>
     </nav>
 
-    <main>
-        <h2>Funcionários</h2>
-        <div class="cards-container">
-            <a href="#" class="card">
-                <h3>Visualizar Funcionários</h3>
-                <p>Visualize a lista e o perfil dos funcionários.</p>
-            </a>
-            <a href="cadastrarFuncionario.html" class="card">
-                <h3>Cadastrar Funcionário</h3>
-                <p>Clique aqui para cadastrar um novo funcionário.</p>
-            </a>
-            <a href="#" class="card">
-                <h3>Alterar Permissões</h3>
-                <p>Acesse aqui para alterar a permissão dos funcionários.</p>
-            </a>
+    <main class="main-container">
+        <div class="main-card">
+            <div class="card-header">
+                <h2>Funcionários</h2>
+                <button class="create-button" onclick="createEmployee()">+ Novo Funcionário</button>
+            </div>
+            <div class="card-content" id="employees-container">
+                <!-- Pequenos cards dos funcionários serão inseridos dinamicamente aqui -->
+                <div class="employee-card">
+                    <h3>João da Silva</h3>
+                    <p>Cargo: Gerente</p>
+                    <p>Email: joao.silva@email.com</p>
+                </div>
+                <div class="employee-card">
+                    <h3>Maria Oliveira</h3>
+                    <p>Cargo: Analista</p>
+                    <p>Email: maria.oliveira@email.com</p>
+                </div>
+                <!-- Exemplos acima podem ser substituídos dinamicamente com JavaScript -->
+            </div>
         </div>
     </main>
-
 
     <!-- rodapé -->
     <footer>

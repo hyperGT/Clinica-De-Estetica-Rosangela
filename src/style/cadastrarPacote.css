@@ -1,104 +1,115 @@
-main {
-    width: 90%;
-    max-width: 800px;
+body {
+  background-color: #ffcce0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-.container {
-    background-color: #eee;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+main {
+  width: 90%;
+  max-width: 800px;
+  background-color: #eee;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .back-button {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.2rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    margin-right: auto;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  text-align: center;
 }
 
 .back-button span {
-    font-size: 1.5rem;
-    margin-right: 8px;
+  font-size: 1.5rem;
+  margin-right: 8px;
+  background-color: #CD5FC9;
+  padding: 0.5rem;
+  align-items: center;
+  border-radius: 1rem;
+  color: white;
+  font-weight: bold;
 }
 
 header h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-left: auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 /* Formulário */
 form {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .form-left,
 .form-right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .input-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .input-group label {
-    font-weight: 600;
-    margin-bottom: 5px;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .input-group input,
 .input-group textarea {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    font-size: 1rem;
-    background-color: #fff;
-    outline: none;
-    transition: border-color 0.2s;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #fff;
+  outline: none;
+  transition: border-color 0.2s;
 }
 
 .input-group input:focus,
 .input-group textarea:focus {
-    border-color: #e91e63;
+  border-color: #CD5FC9;
 }
 
 textarea {
-    resize: none;
-    height: 100px;
+  resize: none;
+  height: 100px;
 }
 
 /* Botões */
 .button-group {
-    text-align: right;
+  text-align: right;
 }
 
 .create-button {
-    padding: 10px 20px;
-    background-color: #e91e63;
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: opacity 0.2s;
-}
-
-.create-button:hover {
-    opacity: 0.9;
+  padding: 10px 20px;
+  background-color: #CD5FC9;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
 }
