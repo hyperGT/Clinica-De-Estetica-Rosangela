@@ -12,7 +12,7 @@ body {
 main {
   background-color: #f2f2f2;
   border-radius: 10px;
-  padding: 20px;
+  padding: 1rem;
   text-align: center;
   width: 50%;
 }
@@ -25,7 +25,6 @@ main {
 
 .buttons {
   padding: 10px 20px;
-  border-radius: 5px;
   text-decoration: none;
 }
 
@@ -43,12 +42,30 @@ form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  padding: 1rem;
 }
 
 .input-group {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.button-group a {
+    display: inline-block;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #D959BD;
 }
 
 .input-group div {
@@ -74,15 +91,10 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-  background-color: #de5cff;
+  background-color: #D959BD;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-}
-
-input[type="submit"]:hover {
-  background-color: #c454e3;
 }

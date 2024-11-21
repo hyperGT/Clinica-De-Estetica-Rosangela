@@ -13,11 +13,6 @@
 
 <body>
     <main>
-        <div class="header">
-            <a href="login.html" class="login-btn buttons">Login</a>
-            <a href="cadastro.html" class="register-btn buttons">Cadastre-se</a>
-        </div>
-
         <form action="funcionarios.html">
             <div class="input-group">
                 <div>
@@ -38,7 +33,10 @@
             <label for="confirma-senha">Confirme a senha</label>
             <input type="password" id="confirma-senha" name="confirma-senha" placeholder="Senha">
 
-            <input type="submit" value="Criar Conta" class="submit-btn">
+            <div class="button-group">
+                <input type="submit" value="Criar Conta" class="submit-btn">
+                <a href="index.html" class="submit-btn">Retornar</a>
+            </div>
         </form>
     </main>
 </body>
