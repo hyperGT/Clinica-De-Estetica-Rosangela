@@ -1,0 +1,43 @@
+main {
+    padding: 20px;
+    min-height: 890px;
+  }
+  
+  .card-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+
+.card {
+    width: 350px;
+    height: 220px;  
+    padding: 1.2em;
+    background-color: #f2f2f2;
+}
+
+.card p{
+    font-size: 0.88em;
+}
+
+#criar-pacotes {
+  margin-top: 8em;
+}
+
+a .btn {
+  background-color: black;
+  width: 200px;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #de5cff;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+a .btn:hover {
+  background-color: rgb(26, 25, 25);
+  border: 2px solid #c04ee0;
+}

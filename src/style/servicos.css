@@ -8,23 +8,14 @@ main {
   justify-content: space-around;
   gap: 20px;
   flex-wrap: wrap;
+  height: fit-content;
 }
 
 .card {
   width: 300px;
   height: 220px;
   background-color: #f2f2f2;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  color: black;
   margin: 0 2em;
-  transition: transform 0.4s, box-shadow 0.3s; 
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-text {
