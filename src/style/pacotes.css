@@ -41,3 +41,80 @@ a .btn:hover {
   background-color: rgb(26, 25, 25);
   border: 2px solid #c04ee0;
 }
+
+/*CSS da página Meus pacotes */
+#pacotes-opcoes .flex-container{
+  display: flex;
+  gap: 40px;
+  justify-content: start;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+#pacotes-opcoes a .btn{
+  width: 250px;
+}
+
+#meus-pacotes {
+  margin-top: 8em;
+}
+
+.pacotes-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.pacote{
+
+  width: 40%;
+  margin-top: 40px;
+  border: none;
+  background-color: #EA64BC;
+  transition: transform 0.4s;
+  padding: 30px;
+}
+
+.pacote:hover{
+  transform: scale(1.05);
+}
+
+.pacote .informacoes{  
+  padding: 20px;
+}
+
+.informacoes ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.informacoes li {
+  padding: 5px 0; 
+  border-bottom: 1px solid #ec96ce; 
+}
+
+.informacoes li:last-child {
+  border-bottom: none; 
+}
+
+#valor{
+  font-size: 1.2em; 
+    font-weight: bold; 
+    color: #fff022; 
+    margin-top: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+
+.button-container .btn{
+  width: 100px;
+  border: 1px solid #de5cff;
+  font-size:small;
+  font-weight: bold;
+}
