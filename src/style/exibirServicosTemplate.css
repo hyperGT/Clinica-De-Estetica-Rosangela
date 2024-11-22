@@ -33,19 +33,6 @@ main {
   border-radius: 5px;
 }
 
-/* Botão de voltar */
-.back-button {
-  background: #fff;
-  border: none;
-  border-radius: 50%;
-  color: #f68cbf;
-  font-size: 1.2rem;
-  padding: 10px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
 .back-button:hover {
   background: #f68cbf;
   color: #fff;

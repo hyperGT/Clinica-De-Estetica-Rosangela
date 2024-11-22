@@ -134,6 +134,18 @@ a img {
   background-color: #ac4da8;
 }
 
+/* Botão de voltar */
+.back-button {
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  color: #f68cbf;
+  font-size: 1.2rem;
+  padding: 10px;
+  cursor: pointer;  
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);*/
+}
+
 /* Responsividade */
 @media (max-width: 480px) {
   #searchBar-container {
@@ -145,3 +157,4 @@ a img {
       width: 100%;
   }
 }
+
