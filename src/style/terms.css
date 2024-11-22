@@ -55,21 +55,10 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  color: #fff;
+  background-color: white;
+  color: black;
 }
 
-.return-button {
-  background-color: #8c2d51;
-}
-
-.return-button:hover {
-  background-color: #701f40;
-}
-
-.continue-button {
-  background-color: #5fbe8b;
-}
-
-.continue-button:hover {
-  background-color: #4da974;
+button:hover {
+    background-color: #c2c2c2;
 }
