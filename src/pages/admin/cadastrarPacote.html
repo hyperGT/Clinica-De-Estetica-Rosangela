@@ -20,7 +20,7 @@
             <h1>Cadastro de Pacote</h1>
         </header>
 
-        <form>
+        <form id="form">
             <div class="form-left">
                 <div class="input-group">
                     <label for="nome-pacote">Nome do Pacote</label>
@@ -50,10 +50,14 @@
                     <input type="text" id="desconto" placeholder="Desconto">
                 </div>
                 <div class="button-group">
-                    <button type="submit" class="create-button">Criar Pacote</button>
+                    <button type="submit" class="create-button" onclick="package_popup()">Criar Pacote</button>
                 </div>
             </div>
         </form>
+
+        <script src="../../script/packagePopup.js"></script>
+
+
     </main>
 </body>
 
