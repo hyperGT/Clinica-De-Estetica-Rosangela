@@ -71,13 +71,8 @@ a .btn:hover {
   width: 40%;
   margin-top: 40px;
   border: none;
-  background-color: #EA64BC;
-  transition: transform 0.4s;
+  background-color: #EA64BC;  
   padding: 30px;
-}
-
-.pacote:hover{
-  transform: scale(1.05);
 }
 
 .pacote .informacoes{  
