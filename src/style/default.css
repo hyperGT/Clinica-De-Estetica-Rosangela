@@ -1,3 +1,5 @@
+/* Estilização Padrão html */
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +8,8 @@ body {
   min-height: 100vh;
   font-family: Inter;
 }
+
+/* Componente Navbar */
 
 header {
   padding: 0.5rem;
@@ -50,6 +54,8 @@ nav {
   border-radius: 1rem;
 }
 
+/* Estilização Footer*/
+
 footer {
   padding: 3rem;
   height: 200px;
@@ -76,6 +82,7 @@ a img {
   height: 40px;
 }
 
+/* Estilização Default Componentes*/
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s, box-shadow 0.3s;
@@ -89,7 +96,6 @@ a img {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-
 /* Estilização da barra de pesquisa */
 #searchBar-container {
   display: flex;  
@@ -102,7 +108,7 @@ a img {
 }
 
 /* Input */
-#searchBar {
+#searchBar {  
   flex: 1;  
   border: 2px solid white;
   outline: none;  
@@ -113,7 +119,6 @@ a img {
 #searchBar:focus {
   border-color: #cd5fc9;
 }
-
 
 #searchBar, #searchBtn{
   padding: 10px 15px;
@@ -134,12 +139,24 @@ a img {
   background-color: #ac4da8;
 }
 
-/* Botão de voltar */
-.back-button {
-  background: #fff;
-  border: none;
-  border-radius: 50%;
-  color: #f68cbf;
+/* Estilização do Back Button*/
+
+.back-btn-container{
+  display: flex;  
+  margin-bottom: 1em;    
+  width: 10%;
+  height: 50px;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;  
+}
+
+.back-button {  
+  width: 80px;
+  border: 2px inset #d83cff;
+  background: #cd5fc9;
+  border-radius: 40px;  
+  color: white;
   font-size: 1.2rem;
   padding: 10px;
   cursor: pointer;  

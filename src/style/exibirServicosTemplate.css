@@ -1,27 +1,47 @@
-/* Estilos gerais */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ffcfe1;
-  color: #333;
+/* Centraliza o conteúdo dentro da main */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
 }
 
-main {
-  padding: 20px;
+.centralizar {
+  width: 90%;
+}
+
+/* Estilo da seção de conteúdo */
+.content {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+/* Colunas */
+.left-column,
+.right-column {
+  flex: 1;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Container do botão voltar */
+.back-btn-container {
+  width: 140px;
 }
 
 .top-bar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
 }
 
 .top-bar h1 {
   font-size: 1.5rem;
-  color: #fff;
-  background-color: #f68cbf;
+  /*color: #353535;*/
+  color: #CC00FF;
+  /*background-color: #f68cbf;*/
   padding: 10px 15px;
   border-radius: 5px;
 }
@@ -34,51 +54,80 @@ main {
 }
 
 .back-button:hover {
-  background: #f68cbf;
-  color: #fff;
+  background-color: #a344a0;
 }
 
-/* Seções principais */
-.content {
+.container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1.2em;
+  gap: 1rem;
 }
 
-.left-column, .right-column {
-  width: 45%;
-}
-
-.card {
-  background: #fff;
-  border-radius: 10px;
+/* Card */
+.service-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f5f4f4;
+  height: 200px;
+  border-radius: 4rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 15px;
   margin-bottom: 20px;
 }
 
-.card h2 {
+.service-card h2 {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-.card p {
+.service-card p {
   margin: 5px 0;
 }
 
-.add-package, .schedule {
-  background: #f68cbf;
+.service-card button {
+  background: #D959BD;
   border: none;
-  color: #fff;
+  color: white;
   padding: 8px 10px;
   margin-right: 10px;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-weight: bold;
+  font-size: 0.9em;
 }
 
-.add-package:hover, .schedule:hover {
+.service-card button:hover {
   background: #d1578f;
 }
+
+.right-column {
+  border-radius: 99px 99px 99px 99px;
+  text-align: center; 
+  width: 20%;
+  height: fit-content;
+  background: #f5f4f4;  
+}
+
+hr {
+  font-weight: 1000;
+}
+
+/* Lista na coluna direita */
+.right-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.right-column li {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1rem;
+}
+
 
 .right-column h2 {
   margin-bottom: 15px;
