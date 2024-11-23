@@ -90,7 +90,7 @@ input[type="password"] {
   font-size: 14px;
 }
 
-input[type="submit"] {
+button {
   background-color: #D959BD;
   color: white;
   padding: 10px 20px;
