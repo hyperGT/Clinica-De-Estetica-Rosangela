@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #AF3C6C;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 10px;
+    background-color: #AF3C6C;
+    padding: 20px;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav h2 {
+    color: rgba(61, 61, 61, 0.4);
+}
+
+.back-btn-container {
+    width: 100%;
+    max-width: 200px;
+}
+
+.back-button {
+    width: 100%;    
+    max-width: 70px;
+    height: auto;
+}
+
+#agendamento {
+    padding: 20px;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;    
+    padding: 20px;    
+    border-radius: 30px;
+    background-color: #fff;
+    height: 700px;
+}
+
+input {
+    width: 60%;
+    max-width: 500px;    
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form-container{
+    width: 50%;
+    text-align: center;
+}
+
+#month-select {
+    margin: 20px 0;
+}
+
+#date{
+    align-items: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#horario{
+    outline: none;
+    height: 30px;
+}

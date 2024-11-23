@@ -163,6 +163,10 @@ a img {
   /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);*/
 }
 
+.back-button:hover {
+  background-color: #a344a0;
+}
+
 /* Responsividade */
 @media (max-width: 480px) {
   #searchBar-container {

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Agendamento</title>
+    <link rel="stylesheet" href="../../style/default.css">
+    <link rel="stylesheet" href="../../style/agendamento.css">
+    <link rel="stylesheet" href="../../style/calendario.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">
+            <h1>Agendamento</h1>
+        </a>
+        <h1>|</h1>
+        <a href="#">
+            <h2> Realizar Pagamento</h2>
+        </a>
+    </nav>
+
+    <section id="agendamento">
+
+        <div class="container">
+            <div class="back-btn-container">
+                <button class="back-button" onclick="window.location.href='servicoExibicao.html'">&#8617;</button>
+                <h4>Voltar</h4>
+            </div>
+
+            <div class="flex-container">
+
+                <!-- Calendario dinâmico com js -->
+                <div id="calendar"></div>
+
+
+
+                <div class="form-container">
+                    <form action="./termosPagamento.html" method="post" id="agendamento-form">
+
+                        <label for="">Pacote selecionado:</label><br>
+                        <select name="pacote" id="pacote">
+                            <option value="1" selected>Unha + Nail Design</option>
+                            <option value="2">Corte de cabelo + Depilaçao</option>
+                            <option value="3">Manicure + Tintura no cabelo</option>
+                        </select>
+                        <br><br>
+                        <label for="">Serviço a ser agendado:</label><br>
+                        <select name="cars" id="servico">
+                            <option value="" selected>Unha</option>
+                            <option value="">Nail Design</option>
+                        </select>
+
+                        <div id="date">
+                            <label for="horario">Escolha o horário:</label>
+
+                            <input type="time" id="horario" name="horario" min="08:00" max="18:00">
+
+                            <!-- Seletor de Mês -->
+                            <label for="month-select">Escolha o mês:</label>
+                            
+                            <select id="month-select">
+                                <option value="0">Janeiro</option>
+                                <option value="1">Fevereiro</option>
+                                <option value="2">Março</option>
+                                <option value="3">Abril</option>
+                                <option value="4">Maio</option>
+                                <option value="5">Junho</option>
+                                <option value="6">Julho</option>
+                                <option value="7">Agosto</option>
+                                <option value="8">Setembro</option>
+                                <option value="9">Outubro</option>
+                                <option value="10">Novembro</option>
+                                <option value="11">Dezembro</option>
+                            </select>
+                        </div>
+
+                    </form>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.js"></script>
+                <script type="module" src="../../script/calendario.js"></script>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
