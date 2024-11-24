@@ -3,7 +3,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,11 +10,14 @@ body {
 }
 
 main {
-  width: 90%;
-  max-width: 800px;
-  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 60%;
+  background-color: rgb(230, 230, 230);
   border-radius: 12px;
-  padding: 20px;
+  padding: 3rem;
+  margin: 5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -25,42 +27,18 @@ header {
   margin-bottom: 20px;
 }
 
-.back-button {
-  text-decoration: none;
-  color: #000;
-  font-size: 1.2rem;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-  text-align: center;
-}
-
-.back-button span {
-  font-size: 1.5rem;
-  margin-right: 8px;
-  background-color: #CD5FC9;
-  padding: 0.5rem;
-  align-items: center;
-  border-radius: 1rem;
-  color: white;
-  font-weight: bold;
-}
-
 header h1 {
   font-size: 1.5rem;
-  font-weight: 600;
   text-align: center;
 }
 
 /* Formulário */
 form {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
 }
 
-.form-left,
-.form-right {
+section {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -79,7 +57,7 @@ form {
 
 .input-group input,
 .input-group textarea {
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 8px;
   padding: 10px;
   font-size: 1rem;
@@ -100,7 +78,7 @@ textarea {
 
 /* Botões */
 .button-group {
-  text-align: right;
+  text-align: lwft;
 }
 
 .create-button {
@@ -143,7 +121,7 @@ textarea {
 }
 
 .return-button {
-  background-color: #d186b8;
+  background-color: #CD5FC9;
   color: #fff;
   border: none;
   padding: 10px 20px;

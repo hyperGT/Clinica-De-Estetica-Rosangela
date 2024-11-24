@@ -27,7 +27,7 @@ function createPopup() {
 
   // Fechar o pop-up ao clicar no botão "Retornar"
   returnButton.addEventListener("click", function () {
-    window.location.href = "index.html";
+    window.history.back();
   });
 
   // Adicionar elementos ao pop-up

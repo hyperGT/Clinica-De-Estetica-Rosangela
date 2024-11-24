@@ -33,7 +33,7 @@ function createPopup() {
   message.innerText = "Pagamento Efetuado!";
 
   const returnButton = document.createElement("button");
-  returnButton.innerText = "Retornar";
+  returnButton.innerText = "Voltar para o Início";
   returnButton.classList.add("return-button");
 
   returnButton.addEventListener("click", function () {

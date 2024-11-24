@@ -15,12 +15,12 @@
 <body>
     <main>
         <div class="back-btn-container">
-            <button class="back-button" onclick="window.location.href='servicos.html'">&#8617;</button>
+            <button class="back-button" onclick="window.history.back()">&#8617;</button>
             <h4>Voltar</h4>
         </div>
 
         <form id="form">
-            <div class="form-left">
+            <section class="form-left">
                 <div class="input-group">
                     <label for="nome-pacote">Nome do Pacote</label>
                     <input type="text" id="nome-pacote" placeholder="Nome do Pacote">
@@ -37,9 +37,11 @@
                     <label for="servico3">Serviço 3</label>
                     <input type="text" id="servico3" placeholder="Serviço 3">
                 </div>
-            </div>
+            </section>
 
-            <div class="form-right">
+            <br><br><br>
+
+            <section class="form-right">
                 <div class="input-group">
                     <label for="descricao">Descrição/Observação</label>
                     <textarea id="descricao" placeholder="Descrição/Observação"></textarea>
@@ -51,11 +53,10 @@
                 <div class="button-group">
                     <button type="submit" class="create-button" onclick="package_popup()">Criar Pacote</button>
                 </div>
-            </div>
+            </section>
         </form>
 
         <script src="../../script/packagePopup.js"></script>
-
 
     </main>
 </body>
