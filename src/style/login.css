@@ -89,7 +89,7 @@ input::placeholder {
 }
 
 /* Botão Entrar */
-button {
+input[type="submit"] {
   background-color: #de5cff;
   color: white;
   border: none;
@@ -100,7 +100,7 @@ button {
   width: 100%;
 }
 
-button:hover {
+input[type="submit"]:hover {
   background-color: #c04ee0;
 }
 

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CE Rosângela | Cartão de Crédito</title>
+    <link rel="stylesheet" href="../../style/pagamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h4>Agendar <span>| Realizar Pagamento</span></h1>
+    </header>
+
+    <main>
+        <section class="description">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Serviços</td>
+                        <td>R$XX,XX</td>
+                    </tr>
+                    <tr>
+                        <td>Descontos</td>
+                        <td>R$XX,XX</td>
+                    </tr>
+                    <tr>
+                        <td><b>Total a Pagar</b></td>
+                        <td><b>R$XX,XX</b></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button class="back-button" onclick="window.history.back()">Retornar</button>
+        </section>
+
+        <section class="payment-method">
+
+            <div class="credit-container">
+                <h3>Cartão de Crédito</h3>
+            </div>
+
+            <div>
+                <img src="../../imgs/mastercard-logo.png" alt="mastercard" class="cards">
+                <img src="../../imgs/visa-logo.png" alt="visa" class="cards">
+            </div>
+            <form id="form">
+                <input type="text" id="cardNumber" placeholder="Número do Cartão" required>
+                <input type="text" id="cardName" placeholder="Nome no Cartão" required>
+
+                <div>
+                    <input type="text" id="expiryDate" placeholder="MM/AAAA" required>
+                    <input type="text" id="cvv" placeholder="CVV" required>
+                </div>
+
+                <button type="submit" id="submitPayment">Efetuar Pagamento</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="../../script/paymentPopup.js"></script>
+
+
+</body>
+
+</html>

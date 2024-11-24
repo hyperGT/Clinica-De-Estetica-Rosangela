@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CE Rosângela | Pix</title>
+    <link rel="stylesheet" href="../../style/pagamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../../script/paymentPopup.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h4>Agendar <span>| Realizar Pagamento</span></h1>
+    </header>
+
+    <main>
+        <section class="description">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Serviços</td>
+                        <td>R$XX,XX</td>
+                    </tr>
+                    <tr>
+                        <td>Descontos</td>
+                        <td>R$XX,XX</td>
+                    </tr>
+                    <tr>
+                        <td><b>Total a Pagar</b></td>
+                        <td><b>R$XX,XX</b></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button class="back-button" onclick="window.history.back()">Voltar</button>
+        </section>
+
+        <section class="payment-method">
+            <div class="pix-container">
+                <h3>Pix</h3>
+                <p>Leia o QR Code ou Copie a Chave PIX</p>
+            </div>
+
+            <h1>Ler QR Code</h1>
+
+            <div>
+                <img src="../../imgs/QR-Code.png" alt="QR Code" class="qr-code-img">
+            </div>
+
+            <div>
+                <button type="button" onclick="createPopup()">Copiar Chave Pix</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

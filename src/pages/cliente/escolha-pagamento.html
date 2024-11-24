@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CE Rosângela | Método de Pagamento</title>
+    <link rel="stylesheet" href="../../style/escolha-pagamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="../../script/escolha-pagamento.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h4>Agendar <span>| Método de Pagamento</span></h1>
+    </header>
+
+    <main>
+        <section class="description">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Serviços</td>
+                        <td>R$XX,XX</td>
+                    </tr>
+                    <tr>
+                        <td>Descontos</td>
+                        <td>R$XX,XX</td>
+                    </tr>
+                    <tr>
+                        <td><b>Total a Pagar</b></td>
+                        <td><b>R$XX,XX</b></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Checkbox para usar créditos -->
+            <label class="credit-checkbox">
+                <input type="checkbox" id="creditCheckbox">
+                <span>Usar Créditos</span>
+            </label>
+
+            <p>Caso tenha algum crédito disponível, pode utilizá-lo no pagamento de qualquer serviço.</p>
+
+            <button class="back-button" id="backButton">Voltar</button>
+        </section>
+
+        <section class="payment-method">
+            <h3>Escolha o Método de Pagamento</h3>
+            <label class="option">
+                <input type="radio" name="payment" value="credit-card" id="creditCardRadio">
+                <div class="label-content">
+                    Cartão de Crédito
+                    <div>
+                        <img src="../../imgs/mastercard-logo.png" alt="Master Card">
+                        <img src="../../imgs/visa-logo.png" alt="Visa">
+                    </div>
+                </div>
+            </label>
+            <label class="option">
+                <input type="radio" name="payment" value="pix" id="pixRadio">
+                <div class="label-content">
+                    Pix
+                    <div>
+                        <img src="../../imgs/pix-logo.png" alt="Pix">
+                    </div>
+                </div>
+            </label>
+            <button id="chooseButton" disabled>Escolher</button>
+        </section>
+    </main>
+</body>
+
+</html>
