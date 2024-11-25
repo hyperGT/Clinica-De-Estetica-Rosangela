@@ -29,6 +29,7 @@
     </nav>
 
     <section id="agendamento">
+        
         <div class="container">
             <div class="back-btn-container">
                 <button class="back-button" onclick="window.history.back();">&#8617;</button>
@@ -77,38 +78,45 @@
                 <!-- Formulário -->
                 <div class="form-container">
                     <form action="./termosPagamento.html" method="post" id="agendamento-form">
-                        <label for="pacote">Pacote selecionado:</label><br>
-                        <select name="pacote" id="pacote">
-                            <option value="1" selected>Unha + Nail Design</option>
-                            <option value="2">Corte de cabelo + Depilação</option>
-                            <option value="3">Manicure + Tintura no cabelo</option>
-                        </select>
-                        <br><br>
-                        <label for="servico">Serviço a ser agendado:</label><br>
-                        <select name="servico" id="servico">
-                            <option value="" selected>Unha</option>
-                            <option value="">Nail Design</option>
-                        </select>
-                        <br><br>
-                        <div id="date">
-                            <label for="horario">Escolha o horário:</label>
-                            <input type="time" id="horario" name="horario" min="08:00" max="18:00">
-                            <br><br>
-                            <label for="month-select">Escolha o mês:</label>
-                            <select id="month-select">
-                                <option value="0">Janeiro</option>
-                                <option value="1">Fevereiro</option>
-                                <option value="2">Março</option>
-                                <option value="3">Abril</option>
-                                <option value="4">Maio</option>
-                                <option value="5">Junho</option>
-                                <option value="6">Julho</option>
-                                <option value="7">Agosto</option>
-                                <option value="8">Setembro</option>
-                                <option value="9">Outubro</option>
-                                <option value="10">Novembro</option>
-                                <option value="11">Dezembro</option>
+
+                        <div class="pacotes-agendamento">
+                            <label for="pacote">Pacote selecionado:</label><br>
+                            <select name="pacote" id="pacote">
+                                <option value="1" selected>Unha + Nail Design</option>
+                                <option value="2">Corte de cabelo + Depilação</option>
+                                <option value="3">Manicure + Tintura no cabelo</option>
                             </select>
+                        </div>
+                        <div class="servicos-agendamento">
+                            <label for="servico">Serviço a ser agendado:</label><br>
+                            <select name="servico" id="servico">
+                                <option value="" selected>Unha</option>
+                                <option value="">Nail Design</option>
+                            </select>
+                        </div>
+
+                        <div id="date">
+                            <div class="horario-select">
+                                <label for="horario">Escolha o horário:</label>
+                                <input type="time" id="horario" name="horario" min="08:00" max="18:00">
+                            </div>
+                            <div class="month-select">
+                                <label for="monthSelector">Escolha o mês:</label>
+                                <select id="monthSelector">
+                                    <option value="0">Janeiro</option>
+                                    <option value="1">Fevereiro</option>
+                                    <option value="2">Março</option>
+                                    <option value="3">Abril</option>
+                                    <option value="4">Maio</option>
+                                    <option value="5">Junho</option>
+                                    <option value="6">Julho</option>
+                                    <option value="7">Agosto</option>
+                                    <option value="8">Setembro</option>
+                                    <option value="9">Outubro</option>
+                                    <option value="10">Novembro</option>
+                                    <option value="11">Dezembro</option>
+                                </select>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -122,7 +130,7 @@
             <div class="btn-container">
                 <button id="voltar-btn" onclick="window.history.back();">
                     Voltar
-                </button>                
+                </button>
                 <button id="confirmar-btn" onclick="window.location.href='escolha-pagamento.html'">
                     Confirmar
                 </button>
