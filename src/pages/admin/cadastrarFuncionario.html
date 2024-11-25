@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin | Cadastro de Profissional </title>
-    <link rel="stylesheet" href="../../style/cadastrarFuncionario.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-</head>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin | Cadastro de Profissional </title>
+        <link rel="stylesheet" href="../../style/cadastrarFuncionario.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <script src="../../script/script.js"></script>
+    </head>
 
 <body>
     <main>
         <h1>Cadastro de novo profissional</h1>
 
+        <div id="resultado"></div>
+
         <div class="form-container">
-            <form action="funcionarios.html" method="post">
+            <form method="post">
                 <section class="form-section">
                     <h2>Clínica De Estética Rosângela</h2>
                     <fieldset>
@@ -35,7 +38,7 @@
                         <legend>Informações Pessoais</legend>
                         <div class="input-group">
                             <label for="nome">Nome Completo *</label>
-                            <input type="text" id="nome" placeholder="Inserir Nome Completo">
+                            <input type="text" id="nome-completo" value="Dona Marilda" placeholder="Inserir Nome Completo" required>
                         </div>
                         <div class="input-group">
                             <label for="sexo">Sexo</label>
@@ -46,8 +49,8 @@
                             <input type="text" id="cpf" placeholder="XXX.XXX.XXX-XX">
                         </div>
                         <div class="input-group">
-                            <label for="nome-completo">Ocupação *</label>
-                            <input type="text" id="nome-completo" placeholder="Inserir Nome Completo">
+                            <label for="cargo">Ocupação *</label>
+                            <input type="text" id="cargo" value="Cabelereira" placeholder="Inserir o cargo a ser ocupado" required>
                         </div>
                         <div class="input-group">
                             <label for="estado-civil">Estado Civil</label>
@@ -115,8 +118,9 @@
 
                     <div class="button-group">
                         <a href="funcionarios.html" class="buttons">Retornar</a>
-                        <input type="submit" value="Finalizar Cadastro">
+                        <button type="button" id="adicionar" onclick="cadastrarFuncionario();">Finalizar Cadastro</button>
                     </div>
+                    
                 </section>
             </form>
         </div>
