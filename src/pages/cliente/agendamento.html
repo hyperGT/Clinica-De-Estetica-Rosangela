@@ -11,7 +11,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
-    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="../../script/calendario.js" defer></script>
 </head>
 
 <body>
@@ -27,44 +29,72 @@
     </nav>
 
     <section id="agendamento">
-
         <div class="container">
             <div class="back-btn-container">
-                <button class="back-button" onclick="window.location.href='servicoExibicao.html'">&#8617;</button>
+                <button class="back-button" onclick="window.history.back();">&#8617;</button>
                 <h4>Voltar</h4>
             </div>
 
+            <!-- Flexbox para alinhar calendário e formulário lado a lado -->
             <div class="flex-container">
+                <!-- Calendário -->
+                <div id="calendario-body">
+                    <div class="wrapper">
+                        <!-- Cabeçalho do calendário -->
+                        <div id="calendario-header">
+                            <p class="data-atual">Novembro 2024</p>
+                            <!-- Ícones para mudar os meses -->
+                            <div class="icons">
+                                <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                                <span id="next" class="material-symbols-rounded">chevron_right</span>
+                            </div>
+                        </div>
+                        <div class="calendario">
 
-                <!-- Calendario dinâmico com js -->
-                <div id="calendar"></div>
+                            <ul class="semanas">
+                                <li>Dom</li>
+                                <li>Seg</li>
+                                <li>Ter</li>
+                                <li>Qua</li>
+                                <li>Qui</li>
+                                <li>Sex</li>
+                                <li>Sab</li>
+                            </ul>
+                            <ul class="dias">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <!-- Continue com os dias do mês -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-
-
+                <!-- Formulário -->
                 <div class="form-container">
                     <form action="./termosPagamento.html" method="post" id="agendamento-form">
-
-                        <label for="">Pacote selecionado:</label><br>
+                        <label for="pacote">Pacote selecionado:</label><br>
                         <select name="pacote" id="pacote">
                             <option value="1" selected>Unha + Nail Design</option>
-                            <option value="2">Corte de cabelo + Depilaçao</option>
+                            <option value="2">Corte de cabelo + Depilação</option>
                             <option value="3">Manicure + Tintura no cabelo</option>
                         </select>
                         <br><br>
-                        <label for="">Serviço a ser agendado:</label><br>
-                        <select name="cars" id="servico">
+                        <label for="servico">Serviço a ser agendado:</label><br>
+                        <select name="servico" id="servico">
                             <option value="" selected>Unha</option>
                             <option value="">Nail Design</option>
                         </select>
-
+                        <br><br>
                         <div id="date">
                             <label for="horario">Escolha o horário:</label>
-
                             <input type="time" id="horario" name="horario" min="08:00" max="18:00">
-
-                            <!-- Seletor de Mês -->
+                            <br><br>
                             <label for="month-select">Escolha o mês:</label>
-                            
                             <select id="month-select">
                                 <option value="0">Janeiro</option>
                                 <option value="1">Fevereiro</option>
@@ -80,14 +110,27 @@
                                 <option value="11">Dezembro</option>
                             </select>
                         </div>
-
                     </form>
                 </div>
-                <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.js"></script>
-                <script type="module" src="../../script/calendario.js"></script>
+            </div>
+            <div id="observacoes-area">
+                <label for="obs">Observações</label>
+                <textarea id="observacoes" placeholder="Observações"></textarea>
+                <span>Atrasos resultam em metade do valor do serviço perdido, e metade é convertido em
+                    <span style="color: red;">créditos</span>. </span>
+            </div>
+            <div class="btn-container">
+                <button id="voltar-btn" onclick="window.history.back();">
+                    Voltar
+                </button>                
+                <button id="confirmar-btn" onclick="window.location.href='escolha-pagamento.html'">
+                    Confirmar
+                </button>
             </div>
         </div>
+
     </section>
+
 
 
 </body>
