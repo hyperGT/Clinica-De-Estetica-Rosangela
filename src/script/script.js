@@ -1,7 +1,16 @@
-function cadastrarFuncionario(){        
+document.addEventListener("DOMContentLoaded", ()=>{
 
-    const nome = document.getElementById("nome-completo").value;
-    const cargo = document.getElementById("cargo").value;
+    document.getElementById("add-funcionario").addEventListener("click", (event) =>{
+        event.preventDefault();
+        CadastrarFuncionario();
+    });
+});
+
+
+function CadastrarFuncionario(){        
+
+    let nome = document.getElementById("nome-completo").value;
+    let cargo = document.getElementById("cargo").value;
 
     if (!nome || !cargo) {
         alert("Por favor, preencha todos os campos corretamente!");
@@ -12,15 +21,16 @@ function cadastrarFuncionario(){
     objForm.append("nome", nome);
     objForm.append("cargo", cargo);
 
-    const xhttp = new XMLHttpRequest();
+    console.log(objForm);
+
+    let xhttp = new XMLHttpRequest();
 
     xhttp.onreadystatechange = () => {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
-            document.getElementById("resultado").innerHTML = xhttp.responseText;
+            document.getElementById("msg").innerHTML = xhttp.responseText;
         }
     };
 
-    xhttp.open("POST", "../php/crudFuncionarios.php?action=create", true);
-    xhttp.send(objForm);
-    
+    xhttp.open("POST", "../../php/crudFuncionarios.php?action=create", true);
+    xhttp.send(objForm);    
 }

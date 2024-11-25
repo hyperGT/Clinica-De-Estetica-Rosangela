@@ -8,15 +8,14 @@
         <link rel="stylesheet" href="../../style/cadastrarFuncionario.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-        <script src="../../script/script.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">        
     </head>
 
 <body>
     <main>
         <h1>Cadastro de novo profissional</h1>
 
-        <div id="resultado"></div>
+        <p id="msg"></p>
 
         <div class="form-container">
             <form method="post">
@@ -118,13 +117,15 @@
 
                     <div class="button-group">
                         <a href="funcionarios.html" class="buttons">Retornar</a>
-                        <button type="button" id="adicionar" onclick="cadastrarFuncionario();">Finalizar Cadastro</button>
+                        <button type="submit" class="buttons" id="add-funcionario"">Finalizar Cadastro</button>
                     </div>
                     
                 </section>
             </form>
         </div>
     </main>
+    <!--arquivo js pra processar os dados do funcionário-->
+    <script src="../../script/script.js"></script>
 </body>
 
 </html>
