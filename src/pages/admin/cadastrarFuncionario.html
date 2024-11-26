@@ -1,126 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin | Cadastro de Profissional </title>
-        <link rel="stylesheet" href="../../style/cadastrarFuncionario.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">        
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Cadastro de Profissional </title>
+    <link rel="stylesheet" href="../../style/cadastrarFuncionario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
 
 <body>
     <main>
         <h1>Cadastro de novo profissional</h1>
-
-        <p id="msg"></p>
 
         <div class="form-container">
             <form method="post">
                 <section class="form-section">
                     <h2>Clínica De Estética Rosângela</h2>
                     <fieldset>
-                        <legend>Contato</legend>
-                        <div class="input-group">
-                            <label for="telefone">DDD | Telefone *</label>
-                            <input type="text" id="telefone" placeholder="(XX) XXXXX-XXXX">
-                        </div>
-                        <div class="input-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" placeholder="Insira um Email">
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
                         <legend>Informações Pessoais</legend>
                         <div class="input-group">
                             <label for="nome">Nome Completo *</label>
-                            <input type="text" id="nome-completo" value="Dona Marilda" placeholder="Inserir Nome Completo" required>
+                            <input type="text" id="nome-completo" value="Dona Marilda"
+                                placeholder="Insira o Nome do Funcionário">
                         </div>
                         <div class="input-group">
-                            <label for="sexo">Sexo</label>
-                            <input type="text" id="sexo" placeholder="M/F">
-                        </div>
-                        <div class="input-group">
-                            <label for="cpf">CPF *</label>
-                            <input type="text" id="cpf" placeholder="XXX.XXX.XXX-XX">
+                            <label for="idade">Idade *</label>
+                            <input type="text" id="idade" placeholder="Insira a Idade do Funcionário" value="50">
                         </div>
                         <div class="input-group">
                             <label for="cargo">Ocupação *</label>
-                            <input type="text" id="cargo" value="Cabelereira" placeholder="Inserir o cargo a ser ocupado" required>
+                            <input type="text" id="cargo" value="Cabelereira"
+                                placeholder="Insira o(s) Cargo(s) do Funcionário">
                         </div>
                         <div class="input-group">
-                            <label for="estado-civil">Estado Civil</label>
-                            <select id="estado-civil">
-                                <option value="">Estado Civil</option>
-                                <option value="solteiro">Solteiro(a)</option>
-                                <option value="casado">Casado(a)</option>
-                            </select>
+                            <label for="telefone">Telefone *</label>
+                            <input type="text" id="telefone" placeholder="(XX) XXXXX-XXXX" value="(21) 99999-9999">
                         </div>
                         <div class="input-group">
-                            <label for="grau-instrucao">Grau de Instrução</label>
-                            <input type="text" id="grau-instrucao" placeholder="Inserir Grau de Instrução">
+                            <label for="email">Email *</label>
+                            <input type="email" id="grau-instrucao" placeholder="Inserir Email do Funcionário" value="marilda@gmail.com">
                         </div>
                         <div class="input-group">
-                            <label for="data-nascimento">Data de Nascimento *</label>
-                            <input type="date" id="data-nascimento">
+                            <label for="salario">Salário *</label>
+                            <input type="text" id="salario" placeholder="Ex.: 1500.00" value="2000.00" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="horario">Horário *</label>
+                            <input type="text" id="horario" value="21hrs">
                         </div>
                     </fieldset>
-
-                    <fieldset>
-                        <legend>Endereço</legend>
-                        <div class="input-group">
-                            <label for="cep">CEP</label>
-                            <input type="text" id="cep" placeholder="CEP">
-                        </div>
-                        <div class="input-group">
-                            <label for="endereco">Endereço</label>
-                            <input type="text" id="endereco" placeholder="Endereço">
-                        </div>
-                        <div class="input-group">
-                            <label for="numero">Nº</label>
-                            <input type="text" id="numero" placeholder="Casa">
-                        </div>
-                        <div class="input-group">
-                            <label for="uf">UF</label>
-                            <select id="uf">
-                                <option value="">Estado</option>
-                                <option value="rj">RJ</option>
-                                <option value="sp">SP</option>
-                            </select>
-                        </div>
-                        <div class="input-group">
-                            <label for="municipio">Município</label>
-                            <input type="text" id="municipio" placeholder="Município">
-                        </div>
-                        <div class="input-group">
-                            <label for="bairro">Bairro</label>
-                            <input type="text" id="bairro" placeholder="Bairro">
-                        </div>
-                        <div class="input-group">
-                            <label for="pais">País</label>
-                            <input type="text" id="pais" placeholder="País">
-                        </div>
-                    </fieldset>
-
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="deficiente">
-                        <label for="deficiente">Marque a caixa cinza caso o profissional possua algum tipo de
-                            necessidade especial.</label>
-                    </div>
-
-                    <div class="input-group">
-                        <textarea placeholder="Insira a(s) necessidade(s) especial(is)"></textarea>
-                    </div>
 
                     <div class="button-group">
                         <a href="funcionarios.html" class="buttons">Retornar</a>
                         <button type="submit" class="buttons" id="add-funcionario"">Finalizar Cadastro</button>
                     </div>
-                    
                 </section>
+                <p id=" msg"></p>
             </form>
         </div>
     </main>
