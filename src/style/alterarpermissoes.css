@@ -1,0 +1,114 @@
+.container {
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Define altura mínima como 100% da viewport */
+}
+
+main {
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Layout de permissões */
+.permissions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 2rem;
+}
+
+.permissions-column {
+    width: 45%;
+}
+
+.permission-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Botão voltar */
+.back-btn {
+    display: block;
+    margin-bottom: 20px;
+    color: #fff;
+    background-color: #9933ff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.back-btn:hover {
+    background-color: #801fff;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #9933ff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #9933ff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
