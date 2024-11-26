@@ -19,3 +19,15 @@ Antes de ser definido o protótipo, foi feito um levantamento de requisitos para
 Dois períodos depois, já no curso de desenvolvimento de aplicações web(3DAW), o professor pede para que usemos o protótipo feito no primeiro período para construir uma aplicação web por completo, tanto o lado do cliente como uma parte do servidor(famoso back e front).
 
 E assim foi feito.
+
+
+# banco de dados
+
+nome do database: ce_rosangela
+
+código sql: CREATE TABLE ce_rosangela.funcionarios (id INT UNSIGNED NOT NULL AUTO_INCREMENT , nome VARCHAR(200) NOT NULL , idade INT NOT NULL , cargo VARCHAR(200) NOT NULL , telefone VARCHAR(20) NOT NULL , email VARCHAR(200) NOT NULL , salario VARCHAR(100) NOT NULL , horario VARCHAR(100) NOT NULL , PRIMARY KEY (id)) ENGINE = InnoDB;
+
+
+injeção do adm: INSERT INTO funcionarios (nome, cargo, idade, telefone, email, salario, horario)
+VALUES
+('Admin', 'Administrador', 30, '999999999', 'admin@empresa.com', '0', '9:00 - 18:00');
