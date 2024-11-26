@@ -7,26 +7,30 @@ $action = $_REQUEST['action'];
 switch ($action) {
     case 'create':
         $nome = $_POST['nome'] ?? '';
+        $idade = $_POST['idade'] ?? 0;
         $cargo = $_POST['cargo'] ?? '';
+        $telefone = $_POST['telefone'] ?? '';
+        $email = $_POST['email'] ?? '';
+        $salario = $_POST['salario'] ?? '';
+        $horario = $_POST['horario'] ?? '';
 
-        if ($nome && $cargo) {
-            $sql = $conn->prepare('INSERT INTO funcionarios (nome, cargo) VALUES (?, ?)');
-            $sql->bind_param("ss", $nome, $cargo);
+        if ($nome && $idade && $cargo && $telefone && $email && $salario && $horario) {
+            $sql = $conn->prepare('INSERT INTO funcionarios (nome, idade, cargo, telefone, email, salario, horario) VALUES (?, ?, ?, ?, ?, ?, ?)');
+            $sql->bind_param("sisssss", $nome, $idade, $cargo, $telefone, $email, $salario, $horario);
 
             if ($sql->execute()) {
-                echo "<br>Funcionário cadastrado com sucesso";
+                echo json_encode(["status" => "success", "message" => "Funcionário cadastrado com sucesso"]);
             } else {
-                echo "<br>Erro ao cadastrar funcionário: " . $sql->error;
+                echo json_encode(["status" => "error", "message" => "Erro ao cadastrar funcionário: " . $sql->error]);
             }
         } else {
-            echo "Dados inválidos";
+            echo json_encode(["status" => "error", "message" => "Dados inválidos"]);
         }
         $sql->close();
         break;
 
     case 'read':
-
-        // retorna a tabela
+        // Retorna todos os funcionários
         $resultado = $conn->query("SELECT * FROM funcionarios");
         $funcionarios = [];
 
@@ -38,7 +42,6 @@ switch ($action) {
         break;
 
     case 'readOne':
-
         $id = $_GET['id'];
         $sql = $conn->prepare("SELECT * FROM funcionarios WHERE id = ?");
         $sql->bind_param("i", $id);
@@ -55,29 +58,40 @@ switch ($action) {
         break;
 
     case 'update':
-
         $id = $_GET['id'];
         $data = json_decode(file_get_contents('php://input'), true);
 
-        // Verificar o valor do ID
-        error_log("ID recebido no update: " . $id);
+        if (!$id || !$data) {
+            echo json_encode(["status" => "error", "message" => "ID ou dados inválidos"]);
+            break;
+        }
 
         $campo = $data['campo'];
         $valor = $data['valor'];
 
-        $sql = $conn->prepare("UPDATE funcionarios SET $campo = ? WHERE id = ?");
-        $sql->bind_param("si", $valor, $id);
-
-        if ($sql->execute()) {
-            echo "Campo atualizado com sucesso!";
-        } else {
-            echo "Erro ao atualizar o campo.";
+        // Prevenir SQL Injection no nome do campo
+        $allowedFields = ['nome', 'idade', 'cargo', 'telefone', 'email', 'salario', 'horario'];
+        if (!in_array($campo, $allowedFields)) {
+            echo json_encode(["status" => "error", "message" => "Campo inválido"]);
+            break;
         }
 
+        $sql = $conn->prepare("UPDATE funcionarios SET $campo = ? WHERE id = ?");
+        if ($campo === 'idade') {
+            $sql->bind_param("ii", $valor, $id);
+        } else {
+            $sql->bind_param("si", $valor, $id);
+        }
+
+        if ($sql->execute()) {
+            echo json_encode(["status" => "success", "message" => "Campo atualizado com sucesso!"]);
+        } else {
+            echo json_encode(["status" => "error", "message" => "Erro ao atualizar o campo."]);
+        }
+        $sql->close();
         break;
 
     case 'delete':
-        // exclui um funcionário pelo ID
         $id = $_GET['id'];
         $sql = $conn->prepare("DELETE FROM funcionarios WHERE id = ?");
         $sql->bind_param("i", $id);
@@ -85,9 +99,8 @@ switch ($action) {
         if ($sql->execute()) {
             echo json_encode(["status" => "success", "message" => "Funcionário deletado com sucesso"]);
         } else {
-            echo json_encode(["status" => "error", "message" => "Erro ao deletar funcionario"]);
+            echo json_encode(["status" => "error", "message" => "Erro ao deletar funcionário"]);
         }
-
         $sql->close();
         break;
 }

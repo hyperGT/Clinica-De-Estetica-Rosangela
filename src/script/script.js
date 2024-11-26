@@ -10,8 +10,14 @@ function CadastrarFuncionario() {
 
     let nome = document.getElementById("nome-completo").value;
     let cargo = document.getElementById("cargo").value;
+    let idade = document.getElementById("idade").value;
+    let telefone = document.getElementById("telefone").value;
+    let email = document.getElementById("email").value;
+    let salario = document.getElementById("salario").value;
+    let horario = document.getElementById("horario").value;
 
-    if (!nome || !cargo) {
+    // Verificar se todos os campos obrigatórios estão preenchidos
+    if (!nome || !cargo || !idade || !telefone || !email || !salario || !horario) {
         alert("Por favor, preencha todos os campos corretamente!");
         return;
     }
@@ -19,6 +25,11 @@ function CadastrarFuncionario() {
     let objForm = new FormData();
     objForm.append("nome", nome);
     objForm.append("cargo", cargo);
+    objForm.append("idade", idade);
+    objForm.append("telefone", telefone);
+    objForm.append("email", email);
+    objForm.append("salario", salario);
+    objForm.append("horario", horario);
 
     console.log(objForm);
 
@@ -27,13 +38,14 @@ function CadastrarFuncionario() {
     xhttp.onreadystatechange = () => {
         if (xhttp.readyState == 4 && xhttp.status == 200) {
             document.getElementById("msg").innerHTML = xhttp.responseText;
-            window.location.href = 'funcionarios.html';
+            window.location.href = 'funcionarios.html'; // Redireciona após sucesso
         }
     };
 
     xhttp.open("POST", "../../php/crudFuncionarios.php?action=create", true);
     xhttp.send(objForm);
 }
+
 
 function carregarFuncionarios() {
 

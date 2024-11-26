@@ -24,7 +24,7 @@ function retornaUmFuncionario() {
             document.getElementById("idade").textContent = data.idade;
             document.getElementById("telefone").textContent = data.telefone;
             document.getElementById("email").textContent = data.email;
-            document.getElementById("salario").textContent = `R$${data.salario}`;
+            document.getElementById("salario").textContent = data.salario;
             document.getElementById("horario").textContent = data.horario;
         })
         .catch((error) => {
