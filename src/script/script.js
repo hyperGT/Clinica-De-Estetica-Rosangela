@@ -1,3 +1,7 @@
+/*
+cadastrar um funcionario
+*/
+
 document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("add-funcionario").addEventListener("click", (event) => {
@@ -47,6 +51,7 @@ function CadastrarFuncionario() {
 }
 
 
+/* carregar TODOS os funcionarios */
 function carregarFuncionarios() {
 
     const employeesContainer = document.getElementById("employees-container");
@@ -74,7 +79,8 @@ function carregarFuncionarios() {
             `;
         });
 }
-// deletar funcionario
+
+// deletar um funcionario
 function deletarFuncionario() {
 
     console.log("Iniciando exclusão do funcionário...");

@@ -1,6 +1,8 @@
 let campoAtual = ''; // Para rastrear qual campo está sendo editado
 let funcionarioId = null; // ID do funcionário, obtido da URL
 
+
+/*retorna o funcionario ao iniciar a pagina*/
 document.addEventListener("DOMContentLoaded", () => {
     retornaUmFuncionario();
 });
@@ -37,7 +39,7 @@ function editarCampo(campo) {
     campoAtual = campo;
     const valorAtual = document.getElementById(campo).textContent;
 
-    // Mostra o modal com o valor atual
+    // Mostra o pop-up com o valor atual
     document.getElementById("edit-title").textContent = `Editar ${campo}`;
     document.getElementById("edit-input").value = valorAtual;
     document.getElementById("edit-modal").style.display = "flex";
@@ -47,6 +49,7 @@ function fecharModal() {
     document.getElementById("edit-modal").style.display = "none";
 }
 
+/* salvar edicao novos dados da edição escolhid */
 function salvarEdicao() {
 
     resp = confirm('Tem certeza que deseja alterar?');
