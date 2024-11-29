@@ -1,6 +1,9 @@
 const daysTag = document.querySelector(".dias"),
     currentDate = document.querySelector(".data-atual"),
-    prevNextIcon = document.querySelectorAll(".icons span");    
+    prevNextIcon = document.querySelectorAll(".icons span");
+
+// Armazena os dias selecionados pelo cliente
+let selectedDays = [];
 
 let date = new Date(),
     currYear = date.getFullYear(),
@@ -40,11 +43,25 @@ const renderCalendar = () => {
     daysTag.innerHTML = liTag;
 
     // Adicionar evento de clique para selecionar os dias do mês atual
-    const allDays = daysTag.querySelectorAll("li:not(.disabled)"); // Ignorar os desabilitados
-    allDays.forEach(day => {
-        day.addEventListener("click", () => {
-            day.classList.toggle("selected");
-        });
+    daysTag.addEventListener("click", (e) => {
+        const dayElement = e.target;
+
+        // Ignorar cliques fora dos dias válidos
+        if (!dayElement.matches("li:not(.disabled)")) return;
+
+        const day = parseInt(dayElement.textContent);
+
+        // Alternar estado de seleção
+        if (dayElement.classList.contains("selected")) {
+            dayElement.classList.remove("selected");
+            selectedDays = selectedDays.filter(selected => selected !== day); // Remove do array
+        } else {
+            dayElement.classList.add("selected");
+            selectedDays.push(day); // Adiciona ao array
+        }
+
+        // Mostrar no console para debug 
+        console.log("Dias Selecionados:", selectedDays);
     });
 };
 
@@ -66,3 +83,5 @@ prevNextIcon.forEach(icon => {
         renderCalendar();
     });
 });
+
+
