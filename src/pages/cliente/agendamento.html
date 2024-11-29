@@ -14,6 +14,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script src="../../script/calendario.js" defer></script>
+    <script src="../../script/script.js" defer></script>
 </head>
 
 <body>
@@ -82,16 +83,16 @@
                         <div class="pacotes-agendamento">
                             <label for="pacote">Pacote selecionado:</label><br>
                             <select name="pacote" id="pacote">
-                                <option value="1" selected>Unha + Nail Design</option>
-                                <option value="2">Corte de cabelo + Depilação</option>
-                                <option value="3">Manicure + Tintura no cabelo</option>
+                                <option value="Unha + Nail Design" selected>Unha + Nail Design</option>
+                                <option value="Corte de Cabelo + Depilação">Corte de cabelo + Depilação</option>
+                                <option value="Manicure + Tintura no Cabelo">Manicure + Tintura no cabelo</option>
                             </select>
                         </div>
                         <div class="servicos-agendamento">
                             <label for="servico">Serviço a ser agendado:</label><br>
                             <select name="servico" id="servico">
-                                <option value="" selected>Unha</option>
-                                <option value="">Nail Design</option>
+                                <option value="Unha" selected>Unha</option>
+                                <option value="Nail Design">Nail Design</option>
                             </select>
                         </div>
 
@@ -99,23 +100,6 @@
                             <div class="horario-select">
                                 <label for="horario">Escolha o horário:</label>
                                 <input type="time" id="horario" name="horario" min="08:00" max="18:00">
-                            </div>
-                            <div class="month-select">
-                                <label for="monthSelector">Escolha o mês:</label>
-                                <select id="monthSelector">
-                                    <option value="0">Janeiro</option>
-                                    <option value="1">Fevereiro</option>
-                                    <option value="2">Março</option>
-                                    <option value="3">Abril</option>
-                                    <option value="4">Maio</option>
-                                    <option value="5">Junho</option>
-                                    <option value="6">Julho</option>
-                                    <option value="7">Agosto</option>
-                                    <option value="8">Setembro</option>
-                                    <option value="9">Outubro</option>
-                                    <option value="10">Novembro</option>
-                                    <option value="11">Dezembro</option>
-                                </select>
                             </div>
                         </div>
                     </form>
@@ -131,15 +115,13 @@
                 <button id="voltar-btn" onclick="window.history.back();">
                     Voltar
                 </button>
-                <button id="confirmar-btn" onclick="window.location.href='escolha-pagamento.html'">
+                <button id="confirmar-btn" onclick="CadastrarAgendamento()">
                     Confirmar
                 </button>
             </div>
         </div>
 
     </section>
-
-
 
 </body>
 
